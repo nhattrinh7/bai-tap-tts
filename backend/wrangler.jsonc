@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "r2_buckets": [
+    {
+      "binding": "FILE_BUCKET",
+      "bucket_name": "file-bucket"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "file-db",
+      "database_id": "6c6b35ee-9b80-46ad-afc1-8b4686103e8c"
+    }
+  ]
+}
